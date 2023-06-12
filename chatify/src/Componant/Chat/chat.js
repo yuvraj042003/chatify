@@ -21,10 +21,8 @@ const Chat = () => {
 
     console.log(messages);
     useEffect(() => {
-        
         socket = socketIo(ENDPOINT, { transports: ['websocket'] });
         socket.on('connect', () => {
-            alert('Connected');
             setid(socket.id);
 
         })
@@ -50,7 +48,7 @@ const Chat = () => {
             socket.disconnect();
             socket.off();
         }
-    }, [messages])
+    }, [])
 
     useEffect(() => {
       
