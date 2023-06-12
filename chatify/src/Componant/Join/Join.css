@@ -8,7 +8,7 @@
 }
 .JoinContainer{
     border: 2px solid white;
-    height: 60%;
+    height: 90%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,11 @@
     background: rgb(113, 8, 29);
 }
 @media screen and (max-width: 620px) {
+    .JoinPage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .JoinContainer{
         border: 2px solid white;
         height: 51%;
